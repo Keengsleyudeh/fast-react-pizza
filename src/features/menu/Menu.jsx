@@ -10,7 +10,7 @@ export async function loader() {
 function Menu() {
   const menu = useLoaderData();
   console.log(menu)
-  return (<ul>
+  return (<ul className="divide-y divide-stone-200 px-4">
       {menu.map((pizza) => (<MenuItem pizza= {pizza} pizzaName= {pizza.name} key= {pizza.id} />))}
     </ul>
   )
